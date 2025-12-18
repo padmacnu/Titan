@@ -5,6 +5,26 @@
 
 ---
 
+## 📦 Component Library Inventory
+
+Titan is comprised of 43 modular components categorized by functional purpose:
+
+### 📈 Charts
+- **Performance:** Bar, Donut, and Line Charts optimized for high-frequency telemetry.
+- **Features:** Interactive Legends, Loading Skeletons, and Dark-Mode optimized palettes.
+
+### 🍱 Lists & Tables
+- **High-Density Table:** Features a Table Toolbar, Add/Delete logic, and complex Shuttle controls for data migration.
+- **Pagination:** Specialized for deep-data navigation (1,000+ pages).
+
+### 🛠 Elements & Forms
+- **System States:** Number Badges for alerts, Progress Bars for AI training, and Skeletons for async data fetching.
+- **Inputs:** Search-with-filter, Date Time Pickers, and Toggle Switches for hardware control.
+
+### 🪟 Navigations & Overlays
+- **Workflows:** Multi-step Wizards for cluster setup and Accordions for hidden system logs.
+- **Feedback:** Flash messages for critical errors and Tooltips for technical telemetry definitions.
+
 ## 1. Design Token Architecture (JSON)
 These tokens are managed in Figma Variables and exported as JSON/CSS to drive the Tailwind CSS theme.
 
