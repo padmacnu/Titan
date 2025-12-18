@@ -1,0 +1,84 @@
+/* src/styles/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* --- 1. PRIMITIVE VALUES (Light Mode Defaults) --- */
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
+    
+    --blue-500: #3b82f6;
+    --blue-600: #2563eb;
+    
+    --indigo-500: #6366f1; /* AI Accent */
+
+    /* --- 2. SEMANTIC TOKENS (Mapped to Tailwind) --- */
+    --color-surface-primary: var(--gray-50);
+    --color-surface-secondary: #ffffff;
+    --color-surface-overlay: rgba(17, 24, 39, 0.4);
+
+    --color-text-base: var(--gray-900);
+    --color-text-muted: var(--gray-700);
+    --color-text-on-primary: #ffffff;
+
+    --color-action-primary: var(--blue-600);
+    --color-action-primary-hover: var(--blue-500);
+    --color-action-ai: var(--indigo-500);
+
+    --color-border-subtle: var(--gray-200);
+    --color-border-strong: var(--gray-700);
+
+    /* --- 3. STATUS TOKENS --- */
+    --color-status-success: #10b981;
+    --color-status-warning: #f59e0b;
+    --color-status-error: #ef4444;
+    --color-status-ai-processing: var(--indigo-500);
+
+    /* --- 4. DENSITY / SPACING --- */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-4: 16px;
+    --space-6: 24px;
+  }
+
+  /* --- DARK MODE OVERRIDES (Figma Mode: Dark) --- */
+  .dark {
+    --color-surface-primary: var(--gray-900);
+    --color-surface-secondary: var(--gray-800);
+    --color-surface-overlay: rgba(0, 0, 0, 0.7);
+
+    --color-text-base: var(--gray-50);
+    --color-text-muted: var(--gray-200);
+
+    --color-action-primary: var(--blue-500);
+    --color-action-primary-hover: var(--blue-600);
+
+    --color-border-subtle: var(--gray-700);
+    --color-border-strong: var(--gray-200);
+    
+    /* AI glows more in dark mode */
+    --color-action-ai: #818cf8; 
+  }
+}
+
+@layer components {
+  /* High-Density Data Row Utility */
+  .data-row-compact {
+    @apply h-[32px] flex items-center px-token-sm border-b border-border-subtle hover:bg-bg-surface;
+  }
+}
+
+
+/* Notes */
+/*
+1. The Dark Mode Logic: You aren't just changing a background color; you are re-mapping Semantic Aliases. This shows you understand how to build enterprise-scale themes.
+2. The "Primitive to Semantic" Chain: By defining primitives (e.g., --gray-900) and then assigning them to semantic roles (e.g., --color-surface-primary), you demonstrate that your system is easy to re-brand.
+3. High-Density Focus: The .data-row-compact utility shows that you are designing specifically for the "Storage/AI" persona who needs to see 50+ rows of data without scrolling.
+*/
