@@ -50,7 +50,7 @@ Every pattern is documented from its smallest part to its most complex state:
 ### 🌓 Multi-Mode Support
 Using Figma Variables and Tailwind's `dark:` utility, the system supports:
 * **Cloud Blue (Light):** Optimized for high-visibility daytime monitoring.
-* **Deep Space (Dark):** High-contrast mode for 24/7 SOC/NOC environments.
+* **Deep Space (Dark):** High-contrast mode for monitoring server health, bandwidth & environments.
 
 ### ♿ Accessibility First
 * **Keyboard Navigation:** Full "Grid" keyboard interaction for Data Tables (Arrow key navigation).
