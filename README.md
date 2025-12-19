@@ -1,6 +1,6 @@
 # 🛸 Titan: High-Density Cloud & AI Design System
 
-**Titan** is a professional-grade Design System and Headless React Component Library engineered for data-intensive environments (Hybrid Cloud, AI Training, and Storage Management). This project positions design as a functional extension of engineering, bridging the gap between high-fidelity Figma variables and accessible, logic-first React code.
+**Titan** is a professional-grade Design System and Headless React Component Library engineered for data-intensive environments (Hybrid Cloud, AI Training, and Storage Management). This project positions design as a functional extension of engineering, bridging the gap between high-fidelity Figma variables and accessibility, logic-first React code.
 
 ---
 
